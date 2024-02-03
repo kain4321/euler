@@ -7,3 +7,4 @@ word = 'apple'
 numbers = [1, 2, 3]
 
 word = word*3
+
