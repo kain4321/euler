@@ -1,21 +1,22 @@
 count = 0        
-피보나치_1 = 1
-피보나치_2 = 1
-피보나치_3 = 2
-num = 10**999
+f1 = 1
+f2 = 1
+f3 = 2
+num = 10**2 
 while True:
-    if 피보나치_2 >= 10:
+    count += 1
+    f2  = f1 + f3
+    count += 1
+    if f2 >= num:
         break
-    if 피보나치_3 >= 10:
+    f1 = f2 = 1 + f3
+    count += 1
+    if f1 >= num:
         break
-    if 피보나치_1 >= 10:
+    f3 = f2 + f1
+    count += 1
+    if f3 >= num:
         break
-    count += 1
-    피보나치_2 = 피보나치_1 + 피보나치_3
-    count += 1
-    피보나치_1 = 피보나치_2 + 피보나치_3
-    count += 1
-    피보나치_3 = 피보나치_2 + 피보나치_1
-    count += 1
-    print(피보나치_1, 피보나치_2, 피보나치_3)
+    print(f1, f2, f3)
     
+print(dasdd)
